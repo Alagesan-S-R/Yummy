@@ -1,0 +1,88 @@
+var owl = $('.move');
+owl.owlCarousel({
+    loop:true,
+    margin:1,
+    autoplay:true,
+    autoplayTimeout:1000,
+    autoplayHoverPause:true,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:1
+        },            
+        960:{
+            items:1
+        },
+        1200:{
+            items:3
+        }
+    }
+});
+$('.play').on('click',function(){
+    owl.trigger('play.owl.autoplay',[1000])
+})
+$('.stop').on('click',function(){
+    owl.trigger('stop.owl.autoplay')
+})
+
+var owl = $('.gall');
+owl.owlCarousel({
+    center:true,
+    loop:true,
+    margin:15,
+    autoplay:true,
+    autoplayTimeout:2000,
+    autoplayHoverPause:true,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:1
+        },            
+        960:{
+            items:3
+        },
+        1200:{
+            items:5
+        }
+    }
+});
+$('.play').on('click',function(){
+    owl.trigger('play.owl.autoplay',[1000])
+})
+$('.stop').on('click',function(){
+    owl.trigger('stop.owl.autoplay')
+})
+
+var owl = $('.test');
+owl.owlCarousel({
+    center:true,
+    loop:true,
+    margin:15,
+    autoplay:true,
+    autoplayTimeout:2000,
+    autoplayHoverPause:true,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:1
+        },            
+        960:{
+            items:1
+        },
+        1200:{
+            items:1
+        }
+    }
+});
+$('.play').on('click',function(){
+    owl.trigger('play.owl.autoplay',[1000])
+})
+$('.stop').on('click',function(){
+    owl.trigger('stop.owl.autoplay')
+})
